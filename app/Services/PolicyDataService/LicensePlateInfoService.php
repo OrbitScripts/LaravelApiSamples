@@ -52,7 +52,6 @@ class LicensePlateInfoService
             $token = $this->generateToken();
 
             // Generate report
-            // TODO: cache reports!
             $url = $this->url . 'user/reports/' . self::REPORT_TYPE . '/_make';
             $data = [
                 'queryType' => 'GRZ',
